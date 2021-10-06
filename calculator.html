@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.S Calculate</title>
+    <link href="calculator.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Cedarville Cursive|Karla|Barlow|Caveat">
+    <script src="https://kit.fontawesome.com/f5c7237f56.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="calculator.js"></script>
+
+<header>
+    <div>
+<h1 class="calculateLogo" >J.S Calculate</h1>
+<i class="fas fa-calculator"></i>
+</div>
+</header>
+
+
+<main>
+   <div class="cont-1">
+       <h1>Tip Calculator</h1>
+   </div>
+   <div class="cont-2">
+   <form >
+       <label for="servicePrice">How much was the service?</label>
+      <sup class="pound">£</sup><input id="money" type="number" class="input">
+       <label for="serviceQue">How was the service?</label>
+       <select id="service" name= "Options" class="options" >
+           <option value ="0">Choose an Opton</option>
+           <option value ="0.3">30%-Outstanding</option>
+           <option value ="0.2">20%-Good</option>
+           <option value ="0.15">15%-Just Ok</option>
+           <option value ="0.1">10%-Bad</option>
+           <option value ="0.05">5%-Terrible</option>
+       </select>
+<label for= "numberofpeople">How many people are sharing the bill?</label>
+<input id="people"type="number" class="input"placeholder="Amount of people">
+</div>
+</form>
+<div class="cont-3">
+    <button onClick = "calculateMyTip()" id="btn" class="calculation-btn">Calculate</button>
+</div>
+
+<div class= "cont-4"id="totalTip">
+    <sup>£</sup><span id="tip">0.00</span>
+    <small id="each">each</small>
+  </div>
+</main>
+
+<aside>
+ <p>Although you’re not obligated to tip, adding a few pounds in your bill is welcomed in UK. However, never feel tempted to do so unless you’re really satisfied with the service and you want to express your gratitude for the service. </p>
+</aside>
+
+
+<section>
+
+    <div class="mapIntroduction">
+        <h1> Below is a map that provides some information regarding whether or not a tip is expected, or how a tip may be received in certain regions. </h1>
+        </div>
+
+<div class="imgContainer">
+
+    <img src = "map.jpg" alt="World Map" style= width:80%>
+    
+</div>
+
+<div class="stats">
+
+<div>
+    <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #774DD5; color:black; font-size:100%; text-align:center;">
+        </span><p>No tips at all - insulted if tipped</p></div>
+      <div>
+        <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #6BAED6; color:black; font-size:100%; text-align:center;">
+        </span><p>No tips at all - confiused if tipped</p></div>
+
+        <div>
+            <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #08519C; color:black; font-size:100%; text-align:center;">
+            </span><p>No tips at all - grateful if tipped</p></div>
+
+            <div>
+                <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #74C476; color:black; font-size:100%; text-align:center;">
+                </span><p>Rounding up the bill but not expected</p></div>
+
+                <div>
+                    <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #238b45; color:black; font-size:100%; text-align:center;">
+                    </span><p>Rounding up the bill - expected </p></div>
+
+                    <div>
+                        <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #FFF89B; color:black; font-size:100%; text-align:center;">
+                        </span><p>5-10% - not expected</p></div>
+
+                        <div>
+                            <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #f8e81c; color:black; font-size:100%; text-align:center;">
+                            </span><p>5-10% - expected</p></div>
+
+                            <div>
+                                <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #feb55b; color:black; font-size:100%; text-align:center;">
+                                </span><p>10% - not expected</p></div>
+
+                                <div>
+                                    <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #FF8C00; color:black; font-size:100%; text-align:center;">
+                                    </span><p>10% - not expected</p></div>
+
+                                    <div>
+                                        <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #FF6747; color:black; font-size:100%; text-align:center;">
+                                        </span><p>10%-15% - expected</p></div>
+
+                                        <div>
+                                            <span style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px #555 solid; background-color: #BD0026; color:black; font-size:100%; text-align:center;">
+                                            </span><p>15%-20% - expected</p></div>
+    
+</div>
+
+</section>
+
+<footer>
+    <div class="calculateBottomPage">
+    <p> ©J.S. Calculate
+         <br>All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

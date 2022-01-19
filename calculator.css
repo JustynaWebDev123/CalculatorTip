@@ -1,924 +1,168 @@
 
-@media only screen and (max-width: 375px){
-    
-    *{
-        box-sizing: border-box;
-        font-family: Barlow,Karla;
-     
-    }
-
-
+*{
+    box-sizing: border-box;
+    font-family: Barlow,Karla;
+    padding:0;
+    margin:0;
+   }
 
 header{
     background-color: rgba(216, 132, 132, 0.185);
-    border-bottom: 2px solid rgba(182, 99, 99, 0.185);
-    height: 20vh;
-    position: relative;
-top:-15px;   
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding:1.5rem;
+    gap:1rem;  
+    border-radius: 0 0 10px 10px;   
+}
 
-   
+.calculateLogo{
+    font-family: Caveat, Barlow,Karla;
+    letter-spacing: 0.2rem;
 }
 
 i{
-    position: absolute;
-    top:15px;
-    left:160px;
     font-size: 2em;
 }
-
-
-    .calculateLogo{
-padding:10px;
-        font-family: Caveat, Barlow,Karla;
-        border-bottom: 2px solid gray;
-        width:50%;
-    }
-
    
-   
-
 main{
-border:solid 2px rgb(82, 82, 90);
-width:75%;
-margin:20px auto;
-background-color: rgba(230, 213, 216, 0.123);
-box-shadow: 0px  0px 10px 3px  rgba(151, 108, 80, 0.37), 0px 0px 8px 3px  rgba(109, 75, 67, 0.39);
-border-radius: 10px;
-background-image: url("18106012.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    width:75%;
+    margin:2rem auto 2rem;
+    background-color: rgba(230, 213, 216, 0.123);
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 .cont-1{
-    width: 100%;
-    border: 2px solid rgb(114, 100, 100);
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
+    padding:1.5rem;
+    background-color: rgba(168, 168, 175, 0.322);
+    text-align: center;
+}
+
+.cont-3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: 4rem;
+    padding:1rem;
     background-color: rgba(168, 168, 175, 0.322);
 }
 
-.cont-1 h1{
-    text-align: center;
-    font-size: 20px;
-
-}
-
 .pound{
-    text-align: center;
-    width:25%;
-font-size: 21px;
-position: absolute;
-left:20px;
-top:210px;
+    width:10%;
+    position: relative;
+    font-size: 2em;
+    right:10rem;
+    top:2.5rem;
 }
 
 form{
-    
-    padding:5px;
-    display:grid;
+    display:flex;
+    flex-direction: column;
     justify-content:center;
-
+    align-items: center;
+    text-align: center;
 }
 
 label{
-text-align: center;
-    font-size: 15px;
-    padding:10px;
-
+    font-size: 1.2em;
+    margin:1.5rem 0 1.5rem;
 }
 
-input{
-    
-    padding:5px;
-    width:80%;
-    margin:0 auto;
-    border-radius:10px;
-    position: relative;
-    
-   
-    
+input, .options{   
+    min-width:30%;
+    border:2px solid gray;
+    padding:1rem;
+    border-radius: 10px;   
 }
 
 input[placeholder]{
     text-align: center;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 
-
-select {
-    padding:5px;
-    border-radius:10px;
-    position: relative;
-    font-size: 15px;
-    width:75%;
-    margin:0 auto;
-    
-    
-    
-}
-
-
-.cont-3{
-    margin-top:5px;
-    border-top:2px solid rgb(114, 100, 100);
-    padding:8px;
-    display:flex;
-    justify-content: center;
+button{ 
+    min-width:20%;
+    padding:1rem;
+    font-size: 1em;
+    border:rgba(75, 2, 42, 0.514) 2px solid;
+    cursor: pointer;  
+    background-color: white;
     border-radius: 10px;
-    background-color: rgba(168, 168, 175, 0.322);
 }
 
-button{
-    border-radius:20px;
-    width:70%;
-    padding:10px;
-    font-size: 15px;
-    border:rgb(75, 2, 42) 2px solid;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    cursor: pointer;
-   
+button:hover{
+    border:rgba(75, 2, 42, 0.781) 2px solid; 
 }
 
 .cont-4{
-font-size: 16px;
+    font-size: 1.5em;
     display:flex;
     justify-content: center;
-    background-color: rgba(168, 168, 175, 0.322);
-    padding:3px;
-   
-}
-
-
+    align-items: center;
+    background-color: rgba(168, 168, 175, 0.322)
+   }
 
 aside{
     text-align: center;
     border-radius: 5px;
-    width:90%;
-    margin: auto;
-    padding:15px;
-    box-shadow: inset 0px -5px 20px 0 #fdcaca;
-    
+    width:85%;
+    margin: 0 auto;
+    padding:2rem;
+    box-shadow: inset 0px -5px 20px 0 #fdcaca;   
 }
 
 aside p{
-    text-align:center;
-    font-size: 15px;
-    line-height: 1rem;
+    line-height: 2rem;
 }
 
 .mapIntroduction{
-    margin-top: 20px;
+    margin: 2rem 0 2rem;
     background-color: rgba(128, 128, 128, 0.041);
     border:2px solid rgba(219, 216, 216, 0.315);
-    width:100%;
-    padding:10px;
-    
-}
-
-.mapIntroduction h1{
-
-    text-align: center;
-    font-size: 17px;
-}
+    padding:2rem;
+    text-align: center;   
+}   
 
 .imgContainer{
     display:flex;
     justify-content: center;
-
+    align-items: center;
 }
-img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-    
 
+img{
+  margin:1rem 0 3rem;   
 }
 
 .stats{
     display:grid;
     justify-content: center;
-    padding:20px;
+    align-items: center;
     background-color: rgba(128, 128, 128, 0.041);
     border:2px solid rgba(219, 216, 216, 0.315);
-
+    padding:2rem;
 }
 
 
-p{display:inline;
-    text-align: center;
+p{
+    display:inline;
     padding:10px;
-    position: relative;
-    top:-5px;
+    font-size: 1.3em;
 }
 
 
-.calculateBottomPage{
-    
+footer{
+    padding:1rem;
     background-color: rgba(216, 132, 132, 0.185);
     border-top: 2px solid rgba(182, 99, 99, 0.185);
-}
-
-.calculateBottomPage p{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
-}
-
-#totalTip{
-    display: none;
-    text-align: center;
-}
-
-    
-}
-
-
-@media only screen and (max-width: 768px){
-    
-    *{
-        box-sizing: border-box;
-        font-family: Barlow,Karla;
-    }
-
-
-header{
-    background-color: rgba(216, 132, 132, 0.185);
-    border-bottom: 2px solid rgba(182, 99, 99, 0.185);
-    height: 20vh;
-    position: relative;
-top:-15px;   
-
-   
-}
-
-i{
-    position: absolute;
-    top:15px;
-    left:160px;
-    font-size: 2.3em;
-}
-
-
-    .calculateLogo{
-padding:10px;
-        font-family: Caveat, Barlow,Karla;
-        border-bottom: 2px solid gray;
-        width:50%;
-    }
-
-   
-   
-
-main{
-border:solid 2px rgb(82, 82, 90);
-width:75%;
-margin:20px auto;
-background-color: rgba(230, 213, 216, 0.123);
-box-shadow: 0px  0px 10px 3px  rgba(151, 108, 80, 0.37), 0px 0px 8px 3px  rgba(109, 75, 67, 0.39);
-border-radius: 10px;
-}
-
-.cont-1{
-    width: 100%;
-    border: 2px solid rgb(114, 100, 100);
-    border-radius: 10px;
-    background-color: rgba(168, 168, 175, 0.322);
-}
-
-.cont-1 h1{
-    text-align: center;
-    font-size: 22px;
-
-}
-
-.pound{
-    text-align: center;
-    width:25%;
-    position: absolute;
-    left:20px;
-    top:210px;
-font-size: 23px;
-}
-
-form{
-    
-    padding:5px;
-    display:grid;
-    justify-content:center;
-
-}
-
-label{
-text-align: center;
-    font-size: 17px;
-    padding:10px;
-
-}
-
-input{
-    
-    padding:5px;
-    width:80%;
-    margin:0 auto;
-    border-radius:10px;
-    position: relative;
-   
-    
-}
-
-input[placeholder]{
-    text-align: center;
-    font-size: 15px;
-}
-
-
-
-select {
-    padding:5px;
-    border-radius:10px;
-    position: relative;
-    font-size: 16px;
-    width:75%;
-    margin:0 auto;
-    
-    
-    
-    
-}
-
-
-.cont-3{
-    margin-top:5px;
-    border-top:2px solid rgb(114, 100, 100);
-    padding:8px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
-    background-color: rgba(168, 168, 175, 0.322);
+    align-items: center;
 }
-
-button{
-    border-radius:20px;
-    width:70%;
-    padding:10px;
-    font-size: 15px;
-    border:rgb(75, 2, 42) 2px solid;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    cursor: pointer;
-   
-}
-
-.cont-4{
-font-size: 18px;
-    display:flex;
-    justify-content: center;
-    background-color: rgba(168, 168, 175, 0.322);
-    padding:3px;
-   
-}
-
-
-
-aside{
-    text-align: center;
-    border-radius: 5px;
-    width:90%;
-    margin: auto;
-    padding:18px;
-    box-shadow: inset 0px -5px 20px 0 #fdcaca;
-    
-}
-
-aside p{
-    text-align:center;
-    font-size: 17px;
-    line-height: 1rem;
-}
-
-.mapIntroduction{
-    margin-top: 20px;
-    background-color: rgba(128, 128, 128, 0.041);
-    border:2px solid rgba(219, 216, 216, 0.315);
-    width:100%;
-    padding:10px;
-    
-}
-
-.mapIntroduction h1{
-
-    text-align: center;
-    font-size: 19px;
-}
-
-
-.imgContainer{
-    display:flex;
-    justify-content: center;
-
-}
-
-img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-
-.stats{
-    display:grid;
-    justify-content: center;
-    padding:20px;
-    background-color: rgba(128, 128, 128, 0.041);
-    border:2px solid rgba(219, 216, 216, 0.315);
-
-}
-
-
-p{display:inline;
-    text-align: center;
-    padding:10px;
-    position: relative;
-    top:-5px;
-}
-
-
-.calculateBottomPage{
-    
-    background-color: rgba(216, 132, 132, 0.185);
-    border-top: 2px solid rgba(182, 99, 99, 0.185);
-}
-
-.calculateBottomPage p{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-}
-
-#totalTip{
-    display: none;
-    text-align: center;
-}
-
-    
-}
-
-
-@media only screen and (max-width: 1024px){
-    
-    *{
-        box-sizing: border-box;
-        font-family: Barlow,Karla;
-    }
-
-
-header{
-    background-color: rgba(216, 132, 132, 0.185);
-    border-bottom: 2px solid rgba(182, 99, 99, 0.185);
-    height: 20vh;
-    position: relative;
-top:-15px;   
-
-   
-}
-
-i{
-    position: absolute;
-    top:15px;
-    left:160px;
-    font-size: 2.4em;
-}
-
-
-    .calculateLogo{
-padding:10px;
-        font-family: Caveat, Barlow,Karla;
-        border-bottom: 2px solid gray;
-        width:50%;
-    }
-
-   
-   
-
-main{
-border:solid 2px rgb(82, 82, 90);
-width:75%;
-margin:20px auto;
-background-color: rgba(230, 213, 216, 0.123);
-box-shadow: 0px  0px 10px 3px  rgba(151, 108, 80, 0.37), 0px 0px 8px 3px  rgba(109, 75, 67, 0.39);
-border-radius: 10px;
-}
-
-.cont-1{
-    width: 100%;
-    border: 2px solid rgb(114, 100, 100);
-    border-radius: 10px;
-    background-color: rgba(168, 168, 175, 0.322);
-}
-
-.cont-1 h1{
-    text-align: center;
-    font-size: 24px;
-
-}
-
-.pound{
-    text-align: center;
-    width:25%;
-    position: absolute;
-    left:20px;
-    top:210px;
-font-size: 25px;
-}
-
-form{
-    
-    padding:5px;
-    display:grid;
-    justify-content:center;
-
-}
-
-label{
-text-align: center;
-    font-size: 18px;
-    padding:10px;
-
-}
-
-input{
-    
-    padding:5px;
-    width:80%;
-    margin:0 auto;
-    border-radius:10px;
-    position: relative;
-    
-   
-    
-}
-
-input[placeholder]{
-    text-align: center;
-    font-size: 15px;
-}
-
-
-
-select {
-    padding:5px;
-    border-radius:10px;
-    position: relative;
-    font-size: 16px;
-    width:75%;
-    margin:0 auto;
-    
-    
-    
-}
-
-
-.cont-3{
-    margin-top:5px;
-    border-top:2px solid rgb(114, 100, 100);
-    padding:8px;
-    display:flex;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: rgba(168, 168, 175, 0.322);
-}
-
-button{
-    border-radius:20px;
-    width:70%;
-    padding:10px;
-    font-size: 17px;
-    border:rgb(75, 2, 42) 2px solid;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    cursor: pointer;
-}
-
-.cont-4{
-font-size: 19px;
-    display:flex;
-    justify-content: center;
-    background-color: rgba(168, 168, 175, 0.322);
-    padding:3px;
-   
-}
-
-
-
-aside{
-    text-align: center;
-    border-radius: 5px;
-    width:90%;
-    margin: auto;
-    padding:18px;
-    box-shadow: inset 0px -5px 20px 0 #fdcaca;
-    
-}
-
-aside p{
-    text-align:center;
-    font-size: 18px;
-    line-height: 1rem;
-}
-
-.mapIntroduction{
-    margin-top: 20px;
-    background-color: rgba(128, 128, 128, 0.041);
-    border:2px solid rgba(219, 216, 216, 0.315);
-    width:100%;
-    padding:10px;
-    
-}
-
-.mapIntroduction h1{
-
-    text-align: center;
-    font-size: 20px;
-}
-
-.imgContainer{
-    display:flex;
-    justify-content: center;
-
-}
-
-
-img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-
-.stats{
-    display:grid;
-    justify-content: center;
-    padding:20px;
-    background-color: rgba(128, 128, 128, 0.041);
-    border:2px solid rgba(219, 216, 216, 0.315);
-
-}
-
-
-p{display:inline;
-    text-align: center;
-    padding:10px;
-    position: relative;
-    top:-5px;
-}
-
-
-.calculateBottomPage{
-    
-    background-color: rgba(216, 132, 132, 0.185);
-    border-top: 2px solid rgba(182, 99, 99, 0.185);
-}
-
-.calculateBottomPage p{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-}
-
-#totalTip{
-    display: none;
-    text-align: center;
-}
-
-    
-}
-
-@media only screen and (max-width: 1440px){
-    
-    *{
-        box-sizing: border-box;
-        font-family: Barlow,Karla;
-    }
-
-
-header{
-    background-color: rgba(216, 132, 132, 0.185);
-    border-bottom: 2px solid rgba(182, 99, 99, 0.185);
-    height: 20vh;
-    position: relative;
-top:-15px;   
-
-   
-}
-
-i{
-    position: absolute;
-    top:15px;
-    left:160px;
-    font-size: 2.4em;
-}
-
-
-    .calculateLogo{
-padding:10px;
-        font-family: Caveat, Barlow,Karla;
-        border-bottom: 2px solid gray;
-        width:50%;
-    }
-
-   
-   
-
-main{
-border:solid 2px rgb(82, 82, 90);
-width:75%;
-margin:20px auto;
-background-color: rgba(230, 213, 216, 0.123);
-box-shadow: 0px  0px 10px 3px  rgba(151, 108, 80, 0.37), 0px 0px 8px 3px  rgba(109, 75, 67, 0.39);
-border-radius: 10px;
-}
-
-.cont-1{
-    width: 100%;
-    border: 2px solid rgb(114, 100, 100);
-    border-radius: 10px;
-    background-color: rgba(168, 168, 175, 0.322);
-}
-
-.cont-1 h1{
-    text-align: center;
-    font-size: 25px;
-
-}
-
-.pound{
-    text-align: center;
-    width:25%;
-font-size: 26px;
-position: absolute;
-left:20px;
-top:210px;
-}
-
-form{
-    
-    padding:5px;
-    display:grid;
-    justify-content:center;
-
-}
-
-label{
-text-align: center;
-    font-size: 18px;
-    padding:10px;
-
-}
-
-input{
-    
-    padding:10px;
-    width:80%;
-    margin:0 auto;
-    border-radius:10px;
-    position: relative;
-    
-   
-    
-}
-
-input[placeholder]{
-    text-align: center;
-    font-size: 15px;
-}
-
-
-
-select {
-    padding:10px;
-    border-radius:10px;
-    position: relative;
-    font-size: 16px;
-    width:75%;
-    margin:0 auto;
-    
-    
-    
-}
-
-
-.cont-3{
-    margin-top:5px;
-    border-top:2px solid rgb(114, 100, 100);
-    padding:8px;
-    display:flex;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: rgba(168, 168, 175, 0.322);
-}
-
-button{
-    border-radius:20px;
-    width:70%;
-    padding:10px;
-    font-size: 17px;
-    border:rgb(75, 2, 42) 2px solid;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    cursor: pointer;
-   
-}
-
-.cont-4{
-font-size: 20px;
-    display:flex;
-    justify-content: center;
-    background-color: rgba(168, 168, 175, 0.322);
-    padding:3px;
-   
-}
-
-
-
-aside{
-    text-align: center;
-    border-radius: 5px;
-    width:90%;
-    margin: auto;
-    padding:18px;
-    box-shadow: inset 0px -5px 20px 0 #fdcaca;
-    
-}
-
-aside p{
-    text-align:center;
-    font-size: 20px;
-    line-height: 1rem;
-}
-
-.mapIntroduction{
-    margin-top: 20px;
-    background-color: rgba(128, 128, 128, 0.041);
-    border:2px solid rgba(219, 216, 216, 0.315);
-    width:100%;
-    padding:10px;
-    
-}
-
-.mapIntroduction h1{
-
-    text-align: center;
-    font-size: 21px;
-}
-
-.imgContainer{
-    display:flex;
-    justify-content: center;
-
-}
-
-
-img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-
-.stats{
-    display:grid;
-    justify-content: center;
-    padding:20px;
-    background-color: rgba(128, 128, 128, 0.041);
-    border:2px solid rgba(219, 216, 216, 0.315);
-
-}
-
-
-p{display:inline;
-    text-align: center;
-    padding:10px;
-    position: relative;
-    top:-5px;
-    font-size: 20px;
-}
-
-
-.calculateBottomPage{
-    
-    background-color: rgba(216, 132, 132, 0.185);
-    border-top: 2px solid rgba(182, 99, 99, 0.185);
-}
-
-.calculateBottomPage p{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 16px;
-}
-
 
 
 #totalTip{
@@ -926,4 +170,20 @@ p{display:inline;
     text-align: center;
 }
     
+@media only screen and (max-width: 425px) {
+.pound{
+    right:6.5rem;
+    }
 }
+@media only screen and (min-width:1400px){
+.pound{
+    right:13rem;
+        }
+    }
+
+@media only screen and (min-width:2560px){
+.pound{
+ right:20rem;
+}
+}
+

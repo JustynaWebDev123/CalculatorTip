@@ -13,7 +13,8 @@ header{
     align-items: center;
     padding:1.5rem;
     gap:1rem;  
-    border-radius: 0 0 10px 10px;   
+    border-radius: 0 0 10px 10px;  
+    border-bottom: 2px solid rgba(182, 99, 99, 0.185); 
 }
 
 .calculateLogo{
@@ -39,6 +40,7 @@ main{
     padding:1.5rem;
     background-color: rgba(168, 168, 175, 0.322);
     text-align: center;
+
 }
 
 .cont-3{
